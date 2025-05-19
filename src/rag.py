@@ -52,7 +52,6 @@ class PDFVectorStoreBuilder:
             persist_directory=self.db_path
         )
         vector_store.add_documents(splits)
-        vector_store.persist()
 
 
 # ==============================
