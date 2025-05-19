@@ -4,6 +4,7 @@ from pydantic import BaseModel, Field
 from langchain_core.messages import BaseMessage, AIMessage
 from langchain_core.chat_history import BaseChatMessageHistory
 from typing import List, Dict
+from system_prompt import system_prompt_get
 
 
 #####Base LLM class to create model
@@ -17,7 +18,7 @@ class BaseLLM(BaseModel):
 
 
 # Configuración de LangChain
-SYSTEM_PROMPT = "OLAK" #system_prompt_get( )
+SYSTEM_PROMPT = system_prompt_get( )
 
 
 def create_llm_from_config(config: BaseLLM):

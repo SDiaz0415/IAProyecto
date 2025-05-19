@@ -32,10 +32,10 @@ def list_models():
     return available_models
 
 
-st.set_page_config(page_title="Asistente de Motores", layout="centered")
+st.set_page_config(page_title="Asistente de Leyes colombianas", layout="centered")
 # st.image("public/logo_dark.png", use_container_width=True) 
 # st.title('Ollama Chatbot')
-st.write('Estoy para ayudarte en tus consultas sobre motores')
+st.write('Estoy para ayudarte a comprender la ley colombiana')
 
 # # Initialization
 # Get models once
